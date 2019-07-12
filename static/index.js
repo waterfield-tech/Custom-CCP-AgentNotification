@@ -11,7 +11,7 @@ async function intializeAgentNotifcation() {
   audioOuputInfo.innerHTML = audioDevices[deviceOption].label;
 }
 
-async function changeAudio() {
+async function changeAudioDevice() {
   deviceOption += 1;
 
   if (deviceOption > audioDevices.length - 1) {
@@ -24,13 +24,13 @@ async function changeAudio() {
   audioOuputInfo.innerHTML = audioDevices[deviceOption].label;
 }
 
-function playAudioFile() {
+function playNotificationAudio() {
   console.log("Playing file");
   audio.currentTime = 0;
   audio.play();
 }
 
-function stopAudioFile() {
+function stopNotificationAudio() {
   console.log("Stopping file");
   audio.pause();
   audio.currentTime = 0;
