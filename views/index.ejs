@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Call Notification</title>
+  </head>
+  <body>
+    <audio id="notificationAudio" controls loop>
+      <source id="notificationAudioSource" src="ring1.mp3" type="audio/mpeg" />
+    </audio>
+    <h3>Select Notification Ringtone</h3>
+    <select id="toneSelection" onchange="setRingtone()">
+      <option value="normal">Normal</option>
+      <option value="user">User Theme</option>
+    </select>
+    <br />
+    <br />
+    <button onclick="changeAudio()">Set Audio Output</button>
+    <button onclick="stopAudioFile()">Stop Audio</button>
+    <p id="audioOuputInfo"></p>
+  </body>
+</html>
+
+<script src="index.js"></script>
