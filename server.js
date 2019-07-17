@@ -6,7 +6,13 @@ app.set("view engine", "ejs");
 
 app.get("/", function(request, response) {
   response.render("index", {
-    title: "title"
+    title: "Agent Notification"
+  });
+});
+
+app.get("/ccp", function(request, response) {
+  response.render("ccp", {
+    title: "Custom CCP"
   });
 });
 

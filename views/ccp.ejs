@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Custom CCP</title>
+  </head>
+  <body>
+    <div
+      id="containerDiv"
+      style="width: 320px; min-width: 200px; height: 465px; min-height: 400px; display: inline-block;"
+    ></div>
+    <br />
+    <div>
+      <audio id="notificationAudio" controls loop>
+        <source
+          id="notificationAudioSource"
+          src="ring1.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <h3>Select Notification Ringtone</h3>
+      <select id="toneSelection" onchange="setRingtone()">
+        <option value="normal">Normal</option>
+        <option value="user">User Theme</option>
+      </select>
+      <br />
+      <br />
+      <button onclick="changeAudioDevice()">Set Audio Output</button>
+      <button onclick="stopNotificationAudio()">Stop Audio</button>
+      <p id="audioOuputInfo"></p>
+    </div>
+  </body>
+</html>
+<script src="connect-streams.js"></script>
+<script src="agentNotification.js"></script>
+<script src="ccp.js"></script>
