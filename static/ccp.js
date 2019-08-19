@@ -1,4 +1,4 @@
-var ccpUrl = "https://gs-jam-test.awsapps.com/connect/ccp#/";
+var ccpUrl = "https://{{your connect instance}}.awsapps.com/connect/ccp#/";
 
 window.ccp = window.ccp || {};
 
